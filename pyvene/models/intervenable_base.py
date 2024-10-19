@@ -358,7 +358,7 @@ class BaseModel(nn.Module):
         for k, v in self.interventions.items():
             v[0].to(device)
         if set_model:
-            self.model.to(device)
+#            self.model.to(device)
 
     def get_device(self):
         """
